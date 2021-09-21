@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+
+
+body {
+    background-image: linear-gradient(
+      0deg,
+      rgb(247, 163, 84) 23.8%,
+      rgb(255, 123, 0) 92%
+    );
+    height: 100vh;
+    padding: 30px;
+}
+
+input {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+hr {
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid white 2px;
+}
+
+.game-container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.game {
+    width: 650px;
+    height: 590px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.game-config {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.board {
+    grid-row: 1/2;
+    padding-bottom: 10px;
+}
+
+.underline {
+    width: 200px;
+}
+
+.card {
+    width: 27%;
+    height: 25%;
+    position: relative;
+    padding: 10px;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+}
+
+.card:hover, input:hover {
+    cursor: pointer;
+}
+
+.twoBy3 {
+    margin-top: 20px;
+    width: 35%;
+    height: minmax(33%, auto);
+    position: relative;
+    padding: 10px;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+}
+
+.twoBy2 {
+    width: 35%;
+    height: minmax(43%, auto);
+    position: relative;
+    padding: 10px;
+    transform-style: preserve-3d;
+    transition: transform .6s;
+}
+
+.display-factor {
+    display: none;
+}
+
+.turn{
+    transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+    background-color: white;
+    border: solid white 2px;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-face {
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 90%;
+    height: 90%;
+}

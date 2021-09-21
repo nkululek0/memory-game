@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <div class="game">
+                <div class="card" data-card="cpp" id="cpp">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/cpp.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="cpp">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/cpp.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="ruby">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/ruby.png" class="back-face">
+                </div>
+                <div class="card" data-card="ruby">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/ruby.png" class="back-face">
+                </div>
+                <div class="card" data-card="py">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/py.png" class="back-face">
+                </div>
+                <div class="card" data-card="py">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/py.png" class="back-face">
+                </div>
+                <div class="card" data-card="js">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/js.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="js">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/js.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="php">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/php.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="php">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/php.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="css">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/css.jpeg" class="back-face">
+                </div>
+                <div class="card" data-card="css">
+                    <img src="./images/door.jpeg" class="front-face"><img src="./images/css.jpeg" class="back-face">
+                </div>
+            </div>
+        </div>
+        <div class="game-config">
+            <div class="board">
+                <h3>Choose Game Board</h3>
+                <hr class="underline"><br>
+                <form>
+                    <input type="button" id="fourBy3" shape><label for="fourBy3"> 4x3</label><br>
+                    <input type="button" id="twoBy3"><label for="twoBy3"> 2x3</label><br>
+                    <input type="button" id="twoBy2"><label for="twoBy2"> 2x2</label>
+                </form>
+            </div>
+            <div class="time-display">
+                <h3>Time</h3>
+                <hr class="underline"><br>
+                <p class="time"> 00 : 00 : 00</p>
+            </div>
+            <div class="card-flips-display">
+                <h3>Card Flips</h3>
+                <hr class="underline"><br>
+                <p class="card-flips">0</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./src/memory-game.js"></script>
+</body>
+</html>
